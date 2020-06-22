@@ -31,6 +31,7 @@ class BottomBarState extends State<BottomBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
@@ -43,7 +44,7 @@ class BottomBarState extends State<BottomBar> {
             ),
             title: Text(
               '商城',
-              style: TextStyle(color: defaultColor),
+              style: TextStyle(color: activeColor),
             ),
           ),
           BottomNavigationBarItem(
@@ -57,7 +58,7 @@ class BottomBarState extends State<BottomBar> {
               ),
               title: Text(
                 '更多',
-                style: TextStyle(color: defaultColor),
+                style: TextStyle(color: activeColor),
               )),
           BottomNavigationBarItem(
               icon: Icon(
@@ -70,7 +71,7 @@ class BottomBarState extends State<BottomBar> {
               ),
               title: Text(
                 '购物车',
-                style: TextStyle(color: defaultColor),
+                style: TextStyle(color: activeColor),
               )),
           BottomNavigationBarItem(
               icon: Icon(
@@ -83,7 +84,7 @@ class BottomBarState extends State<BottomBar> {
               ),
               title: Text(
                 '我的',
-                style: TextStyle(color: defaultColor),
+                style: TextStyle(color: activeColor),
               )),
         ],
         currentIndex: _index,

@@ -77,6 +77,12 @@ class LoginPageState extends State<LoginPage> {
               color: Colors.grey,
             )),
         onSaved: (value) => _userID = value.trim(),
+        onFieldSubmitted: (value){
+
+        },
+        onEditingComplete: (){
+
+        },
       ),
     );
   }
